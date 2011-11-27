@@ -5,4 +5,4 @@ This is the sample application for
 by [Michael Hartl](http://michaelhartl.com/).
 
 This sample app per instructions provided by the source above is brought to you
-by [alirezah](http://www.microsoft.com/exchange/en-us/default.aspx)
+by [alirezah](http://www.microsoft.com/exchange/en-us/default.aspx).
