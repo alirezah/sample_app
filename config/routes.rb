@@ -1,8 +1,21 @@
 SampleApp::Application.routes.draw do
-  get "pages/home"
-  get "pages/contact"
-  get "pages/about"
-  get "pages/help"
+  
+  # route to "contact" action in Pages controller
+  match '/Contact', :to => 'pages#contact'
+  
+  # route to "help" action in Pages controller
+  match '/Help', :to => 'pages#help'
+  
+  # route to "about" action in Pages controller
+  match '/About', :to => 'pages#about'
+  
+  # after removing public/index.html this line allows us to define the root
+  root :to => "pages#home"
+  
+  #get "pages/home"
+  #get "pages/contact"
+  #get "pages/about"
+  #get "pages/help"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
