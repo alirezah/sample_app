@@ -1,16 +1,10 @@
 SampleApp::Application.routes.draw do
-  
-  # route to "contact" action in Pages controller
-  match '/Contact', :to => 'pages#contact'
-  
-  # route to "help" action in Pages controller
-  match '/Help', :to => 'pages#help'
-  
-  # route to "about" action in Pages controller
-  match '/About', :to => 'pages#about'
-  
-  # after removing public/index.html this line allows us to define the root
-  root :to => "pages#home"
+
+  match '/signup',  :to => 'users#new'
+  match '/contact', :to => 'pages#contact'
+  match '/about',   :to => 'pages#about'
+  match '/help',    :to => 'pages#help'
+  root :to => 'pages#home'
   
   #get "pages/home"
   #get "pages/contact"
